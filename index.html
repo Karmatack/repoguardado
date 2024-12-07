@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <title>Interfaz de Módulos</title>
+</head>
+<body class="bg-[#19192E] text-gray-200 font-sans">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-screen p-6">
+        <!-- Reproductor de video -->
+        <div id="video-container" class="col-span-2 bg-[#1F1F39] rounded-xl shadow-md p-6">
+            <h2 class="text-2xl text-blue-400 font-bold mb-6">Reproductor de Video</h2>
+            <iframe
+                class="w-full h-[calc(100%-1rem)] rounded-lg border border-gray-600"
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Sidebar de módulos -->
+        <div id="modules" class="bg-[#1F1F39] rounded-xl shadow-md p-6 overflow-y-auto">
+            <!-- Los módulos se generan dinámicamente con JavaScript -->
+        </div>
+    </div>
+</body>
+</html>
